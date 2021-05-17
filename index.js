@@ -7,7 +7,6 @@ const hanlder = require('./handler/handler');
 const port = process.env.PORT || 3000
 
 app.get('/api/getProductDetails', function (req, res) {
-    //console.log(req.query);
     let body = hanlder.getDetails(req);
     res.send({ body });
 });
